@@ -1,0 +1,66 @@
+:root {
+    --main-bg: rgb(24, 25, 38);
+    --con-bg: rgb(69, 71, 90);
+    --in-bg: rgb(24, 24, 37);
+    --op-bg: rgb(223, 142, 29);
+    --colour: rgb(188, 192, 204);
+}
+
+body {
+    background: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.container {
+    background-color: var(--con-bg);
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    background-color: var(--in-bg);
+    color: var(--colour);
+    border: none;
+    border-radius: 7px;
+    width: 98.5%;
+    height: 60px;
+    outline: none;
+    font-size: 35px;
+    user-select: none;
+}
+
+.key {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#operator {
+    background-color: var(--op-bg);
+    color: var(--in-bg);
+}
+
+button {
+    padding: 25px;
+    cursor: pointer;
+    background-color: var(--in-bg);
+    color: var(--colour);
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    transition: opacity 0.15s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+button:active {
+    opacity: 0.9;
+}
